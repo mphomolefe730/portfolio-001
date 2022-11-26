@@ -8,7 +8,9 @@
 .background{
     height: 100vh;
     width: auto;
-    background-color: black;
+    background-image: url(../images/20210805_155227.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 nav{
@@ -50,17 +52,15 @@ nav button{
     color: black;
     height: 35px;
     width: 90px;
+    margin-left: 20px;
     border-radius: 20px;
 }
 
 nav button:hover{
     background-color: brown;
-    cursor: pointer;
     color: black;
-    height: 35px;
     width: 110px;
-    border-radius: 20px;
+    margin-left: 0;
+    cursor: pointer;
     transition: 50ms;
-    transition-timing-function: 
-    cubic-bezier(0.25, 0.1, 0.25, 1);
 }
