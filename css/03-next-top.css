@@ -1,0 +1,90 @@
+hr{
+    margin: 7px 0px;
+}
+
+.section{
+    display: flex;
+    background-color: black;
+    padding-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.next-top{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    min-height: 450px;
+    margin:0 10px;
+    border-radius: 25px;
+
+}
+
+.about{
+    display: inline;
+    position: relative;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    background-color: grey;
+    max-width: 400px;
+    border-radius: 25px;
+    
+}
+
+h3{
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.paragraph{
+    background-color: white;
+    opacity:50%;
+    padding: 10px 10px;
+    overflow: hidden;
+    min-height:72.5%;
+    box-shadow: 0 0 5px black;
+    border-radius: 25px;
+}
+
+p{
+    display: inline;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+}
+
+.socials{
+    display: inline;
+    align-items: center;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    background-color: grey;
+    max-width: 100px;
+    border-radius: 25px;
+}
+
+.socials-pp{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.socials button{
+    height: 35px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+    border-width: 0;
+    background-color: #2f1a04;
+    color: white;
+}
+
+.socials button:hover{
+    border-width: 2px;
+    background-color: transparent;
+    color: #2f1a04;
+    cursor: pointer;
+}
