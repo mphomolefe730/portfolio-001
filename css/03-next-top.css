@@ -13,7 +13,9 @@
     margin:0 10px;
     border-radius: 15px;
     justify-content: space-between;
-
+}
+.my_work{
+    background-color: rgb(0,0,0);
 }
 /*holder/container of about*/
 .about{
@@ -101,33 +103,36 @@ section>div>aside>ul>li{
     font-size: 50px;
 }
 section>div>aside>ul>li:first-child{
-    color: #2f1a04;
+    color: white;
 }
 section>div>aside>ul>li:hover{
     cursor: pointer;
-    color: brown;
+    color: #2f1a04;
 }
 
 /*holder/container projects*/
-.video{
-    float: left;
+.card-holder{
     margin: 10px 10px;
     background-color: #2f1a04;
     border-radius: 25px;
     justify-content: space-between;
     width: 100%;
 }
-/*projects images*/
-.video img{
-    margin: 10px 10px 5px 10px;
-    max-height: 250px;
-    border-radius: 15px;
-    box-shadow: 0 0 25px black;
+.card-shape{
+    float: left;
+    max-width: 25%;
+    background-color: aqua;
 }
-.video img:hover{
-    height: 200px;
-    opacity: 60%;
-    cursor: pointer;
-    margin: 35px 10px;
-    box-shadow: 0 0 25px brown;
+.card-skeleton{
+    height: 250px;
+    background-image: url("../thumbnails/thumbnail-1.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    padding: 50px 10px 0px 10px;
+}
+.title-div{
+    margin-top: 75px;
 }
