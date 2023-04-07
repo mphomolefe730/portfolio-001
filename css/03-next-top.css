@@ -1,110 +1,133 @@
-hr{
-    margin: 7px 0px;
-}
-
+/*background of after hero section (2nd section)*/
 .section{
     display: flex;
-    background-color: black;
+    background-color: white;
     padding-top: 20px;
     width: 100%;
-    justify-content: space-between;
 }
-
-.next-top{
+/*holder for all after hero section content*/
+.next-top, .my_work{
     display: flex;
-    background-color: white;
+    background-color: rgba(128, 128, 128, 0.125);
     width: 100%;
-    min-height: 450px;
     margin:0 10px;
-    border-radius: 25px;
+    border-radius: 15px;
+    justify-content: space-between;
 
 }
-
+/*holder/container of about*/
 .about{
-    display: inline;
-    position: relative;
-    margin: 10px 10px;
-    padding: 10px 10px;
-    background-color: grey;
-    max-width: 400px;
-    border-radius: 25px;
+    /*display: inline;*/
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(166,166,166,0.25);
+    min-width: 500px;
+    /*max-width: 400px;*/
+    border-radius: 15px;
     
 }
-
+/*heading titles*/
 h3{
     font-size: 100px;
     font-weight: bold;
     text-align: center;
     letter-spacing: 2px;
+    color: #2f1a04;
 }
 
-.paragraph{
-    background-color: white;
-    opacity:50%;
-    padding: 10px 10px;
+/*holder/container of about paragraph*/
+.about-paragraph{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
     overflow: hidden;
-    min-height:72.5%;
-    box-shadow: 0 0 5px black;
-    border-radius: 25px;
+    /*min-height:72.5%;*/
+    /*box-shadow: 0 0 5px black;*/
+    border-radius: 15px;
 }
 
 p{
     display: inline;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     color: black;
 }
-
+/*holder/container of social-info*/
 .socials{
-    display: inline;
-    align-items: center;
-    margin: 10px 10px;
-    padding: 5px 5px;
-    background-color: grey;
-    max-width: 100px;
-    border-radius: 25px;
+    /*position: relative;*/
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(166,166,166,0.25);
+    width: 250px;
+    border-radius: 15px;
 }
-
+/*profile picture*/
 .socials-pp{
     display: inline-block;
     width: 100%;
-    height: auto;
     border-radius: 25px;
 }
-
+/*button of social media section*/
 .socials button{
     height: 35px;
     width: 100%;
     margin-top: 10px;
     border-radius: 20px;
     border-width: 0;
-    background-color: #2f1a04;
+    background-color: black;
     color: white;
 }
 
 .socials button:hover{
-    border-width: 2px;
-    background-color: transparent;
-    color: #2f1a04;
     cursor: pointer;
+    background-color: brown;
 }
 
+/*side menu*/
+.sub-menu{
+    position: sticky;
+    float: left;
+    padding:30px;
+    /*width: 25%;*/
+}
+
+
+section>div>aside>ul{    
+    list-style: none;
+}
+
+/*side menu list*/
+section>div>aside>ul>li{
+    color: grey;
+    font-size: 50px;
+}
+section>div>aside>ul>li:first-child{
+    color: #2f1a04;
+}
+section>div>aside>ul>li:hover{
+    cursor: pointer;
+    color: brown;
+}
+
+/*holder/container projects*/
 .video{
+    float: left;
     margin: 10px 10px;
-    display: inline;
-    background-color:#2f1a04;
-    max-width: 780px; 
+    background-color: #2f1a04;
     border-radius: 25px;
+    justify-content: space-between;
+    width: 100%;
 }
-
+/*projects images*/
 .video img{
-    display: inline;
-    position: relative;
     margin: 10px 10px 5px 10px;
-    height: 200px;
-    width: auto;
-    border-width: 2px;
-    border-color: white;
+    max-height: 250px;
     border-radius: 15px;
-    box-shadow: 0 0 2.5px grey;
+    box-shadow: 0 0 25px black;
+}
+.video img:hover{
+    height: 200px;
+    opacity: 60%;
+    cursor: pointer;
+    margin: 35px 10px;
+    box-shadow: 0 0 25px brown;
 }

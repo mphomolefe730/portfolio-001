@@ -8,10 +8,10 @@
     </head>
 
     <body>
-       <!----upper-session---->
-       <div class="background">
+       <!----navbar section---->
+       <div>
         <nav>
-            <img src="/images/Screenshot_20221028-182417_YouTube.jpg">
+            <img src="./images/Screenshot_20221028-182417_YouTube.jpg">
             <ul>
                 <li><a href="index.html">home</a></li>
                 <li><a href="https://github.com/mphomolefe730">projects</a></li>
@@ -22,18 +22,27 @@
         </nav>
        </div>
 
-       <!----Middle---->
-       <div class="middle-section">
-        <h1>mpho <span>molefe</span></h1>
-        <h2>i'm a web developer</h2>
+       <!----hero section---->
+       <div class="background">
+            <form class="hero-form">
+                <div>
+                    <h1>JOIN EMAIL LIST</h1>
+                </div>
+                <div>
+                    <input type="name" id="name" placeholder="Name">
+                    <input type="name" id="surname" placeholder="Surname">
+                    <input type="email" id="email" placeholder="Email">
+                    <button>Submit</button>
+                </div>
+            </form>
        </div>
-
-       <!----Next page top---->
+        
+       <!----information and socials | Next top---->
        <section class="section">
         <div class="next-top">
             <div class="about">
                 <h3>whoami</h3>
-                <div class="paragraph">
+                <div class="about-paragraph">
                     <p> Hey am Mpho Molefe, 20 years old. 
                         An aspiring software developer, based in Pretoria. 
                         Education include a grade 12 bachelor certificate, 
@@ -50,30 +59,48 @@
                 </div>
             </div>
             <div class="socials">
-                <img src="/profile_pictures/20221020_124129 (1).jpg"
+                <div>
+                <img src="./profile_pictures/20221020_124129(1).jpg"
                 class="socials-pp">
-                <hr>
-                <button>github</button>
-                <button>twitter</button>
-                <button>instagram</button>
-                <hr>
-                <button>hire</button>
-                <button>quote</button>
-                <button>more</button>
-            </div>
-            <div class="video">
-                <img src="/thumbnails/thumbnail-1.webp"
-                class="video-thumbnail">
-                <img src="/thumbnails/thumbnail-1.webp"
-                class="video-thumbnail">
-                <img src="/thumbnails/thumbnail-1.webp"
-                class="video-thumbnail">
-                <img src="/thumbnails/thumbnail-1.webp"
-                class="video-thumbnail">
+                </div>
+                <div>
+                    <button>github</button>
+                    <button>twitter</button>
+                    <button>instagram</button>
+                    <button>linked-in</button>
+                </div>
             </div>
         </div>
        </section>
 
+        <!---my work section-->
+        <section class="section">
+            <div class="my_work">
+                <aside class="sub-menu">
+                    <span>index</span>
+                    <ul>
+                        <li>Projects</li>
+                        <li>Testimonise</li>
+                        <li></li>
+                    </ul>
+                </aside>
+                <div class="sub-menu"> 
+                </div>
+                <div class="video">
+                    <div>
+                        <img src="./thumbnails/thumbnail(phone).jpg"
+                        class="video-thumbnail">
+                        <img src="./thumbnails/thumbnail(phone).jpg"
+                        class="video-thumbnail">
+                        <img src="./thumbnails/thumbnail(phone).jpg"
+                        class="video-thumbnail">
+                        <img src="./thumbnails/thumbnail(phone).jpg"
+                        class="video-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </body>
 
 </html>
