@@ -2,36 +2,28 @@
 .section{
     display: flex;
     background-color: white;
-    padding-top: 20px;
+    padding-top: 50px;
     width: 100%;
 }
 /*holder for all after hero section content*/
-.next-top, .my_work{
-    display: flex;
+.section-1, .my_work{
+    display: grid;
+    grid-template-columns: 2fr 0.3fr;
     background-color: rgba(128, 128, 128, 0.125);
     width: 100%;
-    margin:0 10px;
     border-radius: 15px;
-    justify-content: space-between;
 }
-.my_work{
-    background-color: rgb(0,0,0);
-}
+
 /*holder/container of about*/
 .about{
-    /*display: inline;*/
     margin: 10px;
     padding: 10px;
     background-color: rgba(166,166,166,0.25);
-    min-width: 500px;
-    /*max-width: 400px;*/
     border-radius: 15px;
     
 }
 /*heading titles*/
-h3{
-    font-size: 100px;
-    font-weight: bold;
+.section-1>.about>div>h1{
     text-align: center;
     letter-spacing: 2px;
     color: #2f1a04;
@@ -41,25 +33,19 @@ h3{
 .about-paragraph{
     background-color: rgba(255, 255, 255, 0.5);
     padding: 15px;
-    overflow: hidden;
-    /*min-height:72.5%;*/
-    /*box-shadow: 0 0 5px black;*/
     border-radius: 15px;
 }
 
 p{
     display: inline;
     font-size: 15px;
-    text-align: center;
     color: black;
 }
 /*holder/container of social-info*/
 .socials{
-    /*position: relative;*/
     margin: 10px;
     padding: 10px;
     background-color: rgba(166,166,166,0.25);
-    width: 250px;
     border-radius: 15px;
 }
 /*profile picture*/
@@ -74,7 +60,7 @@ p{
     width: 100%;
     margin-top: 10px;
     border-radius: 20px;
-    border-width: 0;
+    border: 0;
     background-color: black;
     color: white;
 }
@@ -84,17 +70,22 @@ p{
     background-color: brown;
 }
 
+
+.my_work{
+    grid-template-columns: 0.5fr 2fr;
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(0,0,0);
+}
 /*side menu*/
 .sub-menu{
-    position: sticky;
-    float: left;
     padding:30px;
-    /*width: 25%;*/
 }
 
 
 section>div>aside>ul{    
     list-style: none;
+    padding: 0;
 }
 
 /*side menu list*/
@@ -110,29 +101,43 @@ section>div>aside>ul>li:hover{
     color: #2f1a04;
 }
 
-/*holder/container projects*/
+/*holder projects*/
 .card-holder{
-    margin: 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-direction: column;
     background-color: #2f1a04;
     border-radius: 25px;
-    justify-content: space-between;
-    width: 100%;
+    margin: 10px 10px;
 }
+/*container projects*/
 .card-shape{
-    float: left;
-    max-width: 25%;
-    background-color: aqua;
+    /* background-color: rgb(0, 255, 255, 0.3); */
+    padding: 10px;
 }
-.card-skeleton{
-    height: 250px;
-    background-image: url("../thumbnails/thumbnail-1.webp");
+
+.card-shape:hover{
+    padding: 7px;
+    cursor:pointer;
+}
+.card-image{
+    width: 100%;
+    height: 100%;
+    background-image: url("../thumbnails/thumbnail\(phone\).jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 15px;
-    text-align: center;
-    padding: 50px 10px 0px 10px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    /* box-shadow: 0 0 50px 5px black; */
 }
-.title-div{
-    margin-top: 75px;
+.title-container{
+    /* border: 1px solid black; */
+    height: 100%;
+    background: linear-gradient(transparent, black);
+    border-radius: 15px;
+    text-align: center;
+    display: grid;
+    flex-direction: row;
+    align-content: flex-end;
 }

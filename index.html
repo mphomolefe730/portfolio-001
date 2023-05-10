@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/01-nav-bar.css">
         <link rel="stylesheet" href="css/02-index-middle.css">
         <link rel="stylesheet" href="css/03-next-top.css">
+        <script src="https://kit.fontawesome.com/dba8cd8746.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -14,8 +15,8 @@
             <img src="./images/Screenshot_20221028-182417_YouTube.jpg">
             <ul>
                 <li><a href="index.html">home</a></li>
-                <li><a href="https://github.com/mphomolefe730">projects</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="https://github.com/mphomolefe730">github</a></li>
                 <li><a href="#">info</a></li>
             </ul>
             <button>LinkedIn</button>
@@ -23,15 +24,31 @@
        </div>
 
        <!----hero section---->
-       <div class="background">
+       <div class="hero-session">
+            <div class="hero-image">
+                <img src="images/undraw_appreciation_y90s.svg" alt="">
+            </div>
             <form class="hero-form">
                 <div>
-                    <h1>JOIN EMAIL LIST</h1>
+                    <h1>SUPPORT</h1>
                 </div>
                 <div>
-                    <input type="name" id="name" placeholder="Name">
-                    <input type="name" id="surname" placeholder="Surname">
-                    <input type="email" id="email" placeholder="Email">
+                    <div class="payment-options">
+                        <div><i class="fa-solid fa-credit-card"></i></div>
+                        <div><i class="fa-brands fa-paypal"></i></div>
+                        <div><i class="fa-brands fa-cc-visa"></i></div>
+                    </div>
+                    <input type="name" id="name" placeholder="Name"/>
+                    <input type="email" id="email" placeholder="Email"/>
+                    <input type="text" id="cardNumber" placeholder="Credit or Debit Card Number"/>
+                    <select>
+                        <option value="$5">$5</option>
+                        <option value="$10" selected="selected">$10</option>
+                        <option value="$20">$20</option>
+                        <option value="$50">$50</option>
+                        <option value="$100">$100</option>
+                    </select>
+                    <p>by submitting you agree to joining email-list.</p>
                     <button>Submit</button>
                 </div>
             </form>
@@ -39,38 +56,40 @@
         
        <!----information and socials | Next top---->
        <section class="section">
-        <div class="next-top">
-            <div class="about">
-                <h3>whoami</h3>
-                <div class="about-paragraph">
-                    <p> Hey am Mpho Molefe, 20 years old. 
-                        An aspiring software developer, based in Pretoria. 
-                        Education include a grade 12 bachelor certificate, 
-                        mathematics (1 year) and currently enroll in the ALX
-                        Software Engineering program. Future plans to starting
-                        Bachelor of science in IT at Richfield.<br>
-                    </p>
-                    <br>
-                    <p> I'm a team player, both good at leading and following.
-                        My insight to web development didn't just start 
-                        recently - I enbarked in the field in high school too
-                        (Computer Application Technology).<br>
-                    </p>
+            <div class="section-1">
+                <div class="about">
+                    <div>
+                        <h1>> whoami</h1>
+                    </div>
+                    <div class="about-paragraph">
+                        <p> >Hey am Mpho Molefe, 20 years old. 
+                            An aspiring software developer, based in Pretoria. 
+                            Education include a grade 12 bachelor certificate, 
+                            mathematics (1 year) and currently enroll in the ALX
+                            Software Engineering program. Future plans to starting
+                            Bachelor of science in IT at Richfield.<br>
+                        </p>
+                        <br>
+                        <p> I'm a team player, both good at leading and following.
+                            My insight to web development didn't just start 
+                            recently - I enbarked in the field in high school too
+                            (Computer Application Technology).<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="socials">
+                    <div>
+                    <img src="./profile_pictures/20221020_124129(1).jpg"
+                    class="socials-pp">
+                    </div>
+                    <div>
+                        <button><i class="fa-brands fa-github" style="color: #ffffff;"></i>  github</button>
+                        <button><i class="fa-brands fa-twitter" style="color: #ffffff;"></i>  twitter</button>
+                        <button><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>  linked-in</button>
+                        <button><i class="fa-brands fa-instagram" style="color: #ffffff;"></i>  instagram</button>
+                    </div>
                 </div>
             </div>
-            <div class="socials">
-                <div>
-                <img src="./profile_pictures/20221020_124129(1).jpg"
-                class="socials-pp">
-                </div>
-                <div>
-                    <button>github</button>
-                    <button>twitter</button>
-                    <button>instagram</button>
-                    <button>linked-in</button>
-                </div>
-            </div>
-        </div>
        </section>
 
         <!---my work section-->
@@ -80,60 +99,70 @@
                     <span style="color: brown;">index</span>
                     <ul>
                         <li>Projects</li>
+                        <li>Tutorial</li>
                         <li>Testimonise</li>
-                        <li></li>
                     </ul>
                 </aside>
 
                 <div class="card-holder">
                     <div class="card-shape">
-                        <a target="_PARENT" href="/business/customer-stories/spotify" class="">
-                            <div class="card-skeleton">
-                                <div class="title-div">
-                                    <p>title</p>
+                        <a target="_PARENT" src="#" class="">
+                            <div class="card-image">
+                                <div class="title-container">
+                                    <div class="title-div">
+                                        <p>title</p>
+                                    </div>
+                                    <p class="description" style="color: white;">
+                                        Real-time synced lyrics enhance users’ listening experience and song engagement.
+                                    </p>
                                 </div>
-                                <p class="description">
-                                    Real-time synced lyrics enhance users’ listening experience and song engagement.
-                                </p>
                             </div>
                         </a>
                     </div>
                     <div class="card-shape">
-                        <a target="_PARENT" href="/business/customer-stories/spotify" class="">
-                            <div class="card-skeleton">
-                                <div class="title-div">
-                                    <p>title</p>
+                        <a target="_PARENT" src="#" class="">
+                            <div class="card-image">
+                                <div class="title-container">
+                                    <div class="title-div">
+                                        <p>title</p>
+                                    </div>
+                                    <p class="description" style="color: white;">
+                                        Real-time synced lyrics enhance users’ listening experience and song engagement.
+                                    </p>
                                 </div>
-                                <p class="description">
-                                    Real-time synced lyrics enhance users’ listening experience and song engagement.
-                                </p>
                             </div>
                         </a>
                     </div>
                     <div class="card-shape">
-                        <a target="_PARENT" href="/business/customer-stories/spotify" class="">
-                            <div class="card-skeleton">
-                                <div class="title-div">
-                                    <p>title</p>
+                        <a target="_PARENT" src="#" class="">
+                            <div class="card-image">
+                                <div class="title-container">
+                                    <div class="title-div">
+                                        <p>title</p>
+                                    </div>
+                                    <p class="description" style="color: white;">
+                                        Real-time synced lyrics enhance users’ listening experience and song engagement.
+                                    </p>
                                 </div>
-                                <p class="description">
-                                    Real-time synced lyrics enhance users’ listening experience and song engagement.
-                                </p>
                             </div>
                         </a>
                     </div>
                     <div class="card-shape">
-                        <a target="_PARENT" href="/business/customer-stories/spotify" class="">
-                            <div class="card-skeleton">
-                                <div class="title-div">
-                                    <p>title</p>
+                        <a target="_PARENT" src="#" class="">
+                            <div class="card-image">
+                                <div class="title-container">
+                                    <div class="title-div">
+                                        <p>title</p>
+                                    </div>
+                                    <p class="description" style="color: white;">
+                                        Real-time synced lyrics enhance users’ listening experience and song engagement.
+                                    </p>
                                 </div>
-                                <p class="description">
-                                    Real-time synced lyrics enhance users’ listening experience and song engagement.
-                                </p>
                             </div>
                         </a>
                     </div>
+                </div>
+                
             </div>
         </section>
 
