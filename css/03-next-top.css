@@ -1,14 +1,14 @@
 /*background of after hero section (2nd section)*/
 .section{
     display: flex;
-    background-color: white;
+    /* background-color: white; */
     padding-top: 50px;
     width: 100%;
 }
 /*holder for all after hero section content*/
-.section-1, .my_work{
+.section-1{
     display: grid;
-    grid-template-columns: 2fr 0.3fr;
+    grid-template-rows: 2fr 0.3fr;
     background-color: rgba(128, 128, 128, 0.125);
     width: 100%;
     border-radius: 15px;
@@ -24,7 +24,7 @@
 }
 /*heading titles*/
 .section-1>.about>div>h1{
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 2px;
     color: #2f1a04;
 }
@@ -43,6 +43,7 @@ p{
 }
 /*holder/container of social-info*/
 .socials{
+    max-height: fit-content;
     margin: 10px;
     padding: 10px;
     background-color: rgba(166,166,166,0.25);
@@ -50,15 +51,13 @@ p{
 }
 /*profile picture*/
 .socials-pp{
-    display: inline-block;
-    width: 100%;
+    display: none;
     border-radius: 25px;
 }
 /*button of social media section*/
 .socials button{
     height: 35px;
-    width: 100%;
-    margin-top: 10px;
+    width: 22.3%;
     border-radius: 20px;
     border: 0;
     background-color: black;
@@ -67,31 +66,37 @@ p{
 
 .socials button:hover{
     cursor: pointer;
-    background-color: brown;
+    background-color: #a52a2a;
 }
-
 
 .my_work{
-    grid-template-columns: 0.5fr 2fr;
+    display: grid;
+    grid-template-rows: 0.5fr 3fr;
     width: 100%;
+    flex-direction: row;
     border-radius: 15px;
-    background-color: rgb(0,0,0);
+    background-color: brown;
+    border: 2px solid rgba(166,166,166, 0.5);
+    /* background-color: rgb(0,0,0); */
 }
+
 /*side menu*/
 .sub-menu{
-    padding:30px;
+    text-align: center;
+    padding: 10px 30px 0px 30px;
 }
 
-
-section>div>aside>ul{    
+section>div>aside>ul{
     list-style: none;
     padding: 0;
 }
 
 /*side menu list*/
 section>div>aside>ul>li{
+    display: inline;
+    padding: 10px;
     color: grey;
-    font-size: 50px;
+    font-size: 25px;
 }
 section>div>aside>ul>li:first-child{
     color: white;
@@ -100,13 +105,77 @@ section>div>aside>ul>li:hover{
     cursor: pointer;
     color: #2f1a04;
 }
+/* screen and */
+@media only screen and (min-width:900px) {
+    .my_work{
+        grid-template-columns: 0.5fr 2fr;
+        grid-template-rows: 1fr;
+        flex-direction: column;
+        border: 2px solid rgba(166,166,166, 0.5);
+        /* background-color: rgb(0,0,0); */
+    }
+    .about{
+        background-color: rgba(166,166,166,0);
+    }
+
+    /*side menu*/
+    .sub-menu{
+        text-align: start;
+        padding:30px;
+    }
+    /*side menu list*/
+    section>div>aside>ul>li{
+        color: grey;
+        font-size: 50px;
+        padding: 0;
+    }
+    section>div>aside>ul>li:first-child{
+        color: white;
+    }
+    section>div>aside>ul>li:hover{
+        cursor: pointer;
+        color: #2f1a04;
+    }
+    .socials-pp{
+        width: 100%;
+        display: inline-block;
+    }
+    .socials button{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .section-1{
+        grid-template-rows: 1fr;
+        grid-template-columns: 2fr 0.3fr;
+    }
+    .session-2-image{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .session-2-image>img{
+        height: 250px;
+    }
+    .session-2{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        flex-direction: column;
+    }
+    
+    .hero-video>svg{
+        height: 250px;
+    }
+}
 
 /*holder projects*/
 .card-holder{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     flex-direction: column;
-    background-color: #2f1a04;
+    /* background-color: #2f1a04; */
+    border: 2px solid rgba(166,166,166, 0.5);
+    background-color: rgba(166,166,166,0.25);
     border-radius: 25px;
     margin: 10px 10px;
 }

@@ -1,3 +1,6 @@
+html{
+    color-scheme: system;
+}
 body{
     margin: 0px;
     padding: 5px 15px;
@@ -36,12 +39,11 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    text-decoration: underline;
     color: brown;
 }
 
 nav button{
-    background-color: black;
+    background-color: brown;
     color: white;
     height: 35px;
     width: 90px;
@@ -51,8 +53,8 @@ nav button{
 }
 
 nav button:hover{
-    background-color: brown;
+    background-color: black;
     color: white;
     cursor: pointer;
-    border: 0px;
+    border: 2px black solid;
 }
